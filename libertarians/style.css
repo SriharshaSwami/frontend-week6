@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    font-size: 1.6rem;
+    padding: 18px 20px 18px 120px;
+    color: #e10600;
+}
+
+.hero {
+    background: #e10600;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 80px;
+    min-height: 420px;
+}
+
+.hero-text {
+    max-width: 520px;
+    margin-left: 40px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-logo {
+    width: 240px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.parent {
+    display: flex;
+    width: 100%;
+}
+
+.child {
+    background: #5a0000;
+    color: white;
+    border-right: 5px solid #e10600;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 50px;
+    flex: 1;
+}
+
+.child:last-child {
+    border-right: none;
+}
+
+.child h4 {
+    margin-bottom: 14px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.child p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #c9a9a9;
+}
+
+@media screen and (max-width: 1100px) {
+    nav {
+        padding-left: 40px;
+    }
+
+    .hero {
+        padding: 60px 40px;
+    }
+
+    .hero-text {
+        margin-left: 0;
+    }
+
+    .hero-logo {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        padding-left: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    .hero-logo {
+        margin-right: 0;
+    }
+
+    .parent {
+        flex-wrap: wrap;
+    }
+
+    .child {
+        border-right: none;
+        border-bottom: 5px solid #e10600;
+        flex: 1 1 100%;
+    }
+
+    .child:last-child {
+        border-bottom: none;
+    }
+}

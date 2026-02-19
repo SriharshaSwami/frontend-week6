@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.hero {
+    background-image: url("https://miro.medium.com/v2/resize:fit:4800/format:webp/0*Pp6VeBQzxxvRisbP");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.outdoor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 80px;
+}
+
+.outdoor-text h2 {
+    color: #1f4a8a;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.outdoor-text p {
+    max-width: 420px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.outdoor-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.outdoor-media img {
+    width: 460px;
+    max-width: 100%;
+    /* border-radius: 6px; */
+}
+
+.media-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.media-controls span {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #1f4a8a;
+    color: #1f4a8a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.tourism {
+    background-color: #f4f4f4;
+    padding: 50px 80px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.tourism-title h2 {
+    color: #1f4a8a;
+    font-size: 2rem;
+}
+
+.tourism-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #1f4a8a;
+    font-size: 14px;
+}
+
+.suits {
+    text-align: center;
+    padding: 50px 20px 70px 20px;
+}
+
+.suits h2 {
+    color: #1f4a8a;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 14px;
+    color: #1f4a8a;
+}
+
+.tabs .active {
+    font-weight: bold;
+    border-bottom: 3px solid orange;
+    padding-bottom: 6px;
+}
+
+.tab-line {
+    margin: 18px auto 0 auto;
+    width: 70%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 1000px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .outdoor {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .tourism {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .tourism-grid {
+        grid-template-columns: repeat(2, 160px);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tourism-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
